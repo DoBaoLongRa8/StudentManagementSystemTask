@@ -21,6 +21,8 @@ namespace studentManagementSpace
 		void sortCommodities();
 		void sortCommoditiesByType(uint16_t type);
 		void viewAllCommodities();
+		bool updateStudentInfoByID(uint32_t id);
+		bool setStudentStatusByID(uint32_t id, bool stat);
 	};
 }
 #endif

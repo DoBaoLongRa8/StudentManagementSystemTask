@@ -37,8 +37,37 @@ namespace studentSpace
 			return studentID;
 		}
 
-		float getAvgPoint();
+		float getAvgPoint()
+		{
+			return this->avgPoint;
+		}
 
+		bool getStatus() const
+		{
+			return this->status;
+		}
+
+		void setStudentID(uint32_t id)
+		{
+			this->studentID = id;
+		}
+
+		void setStudentName(string name)
+		{
+			this->studentName = name;
+		}
+
+		void setDateOfBirth(uint16_t day, uint16_t month, uint16_t year)
+		{
+			this->dateOfBirth.setDay(day);
+			this->dateOfBirth.setMonth(month);
+			this->dateOfBirth.setYear(year);
+		}
+
+		void setStudentStatus(bool stat)
+		{
+			this->status = stat;
+		}
 	};
 }
 #endif

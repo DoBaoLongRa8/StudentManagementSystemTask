@@ -56,8 +56,9 @@ void StudentClass::inputStudentInfo()
 
 	cout << "\t\t---->Enter the list of subjects students have registered<----" << endl;
 	cout << "->Enter number of subjects students have registered: ";
-	uint16_t numberOfSb = 0;
-	cin >> numberOfSb;
+	string nbOfSbStr;
+	getline(cin, nbOfSbStr);
+	uint16_t numberOfSb = (uint16_t)stoi(nbOfSbStr);
 	for (int i = 1; i <= numberOfSb; i++)
 	{
 		cout << "---->Subject " << i << "<----" << endl;

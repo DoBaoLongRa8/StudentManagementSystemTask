@@ -8,11 +8,12 @@ void SubjectClass::displaySubject() const
 
 void SubjectClass::inputSubject()
 {
-	cin.ignore();
 	cout << "Enter the course code: ";
 	getline(cin, subjectCode);
 	cout << "Enter subject name: ";
 	getline(cin, subjectName);
 	cout << "Enter subject point: ";
-	cin >> subjectPoint;
+	string subPointStr;
+	getline(cin, subPointStr);
+	subjectPoint = stof(subPointStr);
 }
